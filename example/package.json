@@ -9,8 +9,10 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "android": "^0.0.8",
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-native-nando-coding": "../"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
