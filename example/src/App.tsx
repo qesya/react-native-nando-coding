@@ -12,13 +12,12 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* <Text>JSI Installed: {isLoaded().toString()}</Text> */}
       <Text style={styles.txtHeader}>{deviceName}</Text>
       <Text>App Version: {result ? result.appVersion : '-'}</Text>
       <Text>Bundle Identifier: {result ? result.bundleIdentifier : '-'}</Text>
       <Text>Build Version: {result ? result.buildVersion : '-'}</Text>
 
-      {/* <TouchableOpacity
+      <TouchableOpacity
         onPress={() => {
           const value = simpleJsiModule.getAppInfo();
           setResult(value);
@@ -26,25 +25,7 @@ export default function App() {
         style={styles.button}
       >
         <Text style={styles.buttonTxt}>Get App Version From JSI Module</Text>
-      </TouchableOpacity> */}
-
-      {/* <TouchableOpacity
-        onPress={() => {
-          simpleJsiModule.setItem('helloworld', 'Hello World');
-        }}
-        style={styles.button}
-      >
-        <Text style={styles.buttonTxt}>setItem: "Hello World"</Text>
       </TouchableOpacity>
-
-      <TouchableOpacity
-        onPress={() => {
-          setGetItemValue(simpleJsiModule.getItem('helloworld'));
-        }}
-        style={styles.button}
-      >
-        <Text style={styles.buttonTxt}>getItem: {getItemValue}</Text>
-      </TouchableOpacity> */}
     </View>
   );
 }
